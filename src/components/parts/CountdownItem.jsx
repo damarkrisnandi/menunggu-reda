@@ -43,12 +43,14 @@ function CountDownItem(props) {
         return () => {}
     }, [count, isChange, props.date, props.time])
 
+
+    const calendar_url = "https://calendar.google.com/event?action=TEMPLATE&tmeid=Mjlqb2lvMnFic3FhbzJ1ZW04dDU3ajJldWogZGFtYXJrcmlzbmFuZGkxMjAyQG0&tmsrc=damarkrisnandi1202%40gmail.com";
     return (
         <Fragment>
             <div className='
                     flex flex-col justify-center items-center 
                     h-96'>
-                        <div className="columns-4">
+                        <div className="columns-4 mb-10">
                             <div className="flex flex-col justify-start items-center border-amber-300 rounded-lg border p-2">
                                 <div className="text-amber-300 text-5xl">{time.days <= 9 ? '0' : '' }{time.days}</div>
                                 <p className="text-sm text-white">Days</p>
@@ -69,7 +71,18 @@ function CountDownItem(props) {
                                 <p className="text-sm text-white">Seconds</p>
                             </div>
                         </div>
-                {/* <p className="text-amber-300 text-3xl">Days {time.hours <= 9 ? '0' : '' }{time.hours}Hours {time.minutes <= 9 ? '0' : '' }{time.minutes}Minutes {time.seconds <= 9 ? '0' : '' }{time.seconds}Seconds</p> */}
+                        <a href={calendar_url} target="_blank" rel="noopener noreferrer">
+                            <button className="
+                                duration-600 relative transform transition-all ease-in-out 
+                                bg-transparent 
+                                hover:bg-amber-300 text-amber-300 font-semibold 
+                                hover:text-slate-800 py-2 px-4 border border-amber-300 
+                                hover:border-transparent rounded-lg"
+                            >
+                                Tambah Pengingat
+                            </button>
+                        </a>
+                        
             </div>
             
             

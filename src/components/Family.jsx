@@ -7,7 +7,7 @@ class Family extends Component {
             <Fragment>
                 <div>
                     <div className="w-9/12 container mx-auto h-screen">
-                    <div className="text-center header-text text-amber-300 text-5xl mb-12 mt-12">Bride &amp; Groom</div>
+                    <div className="text-center header-text text-amber-300 text-5xl pb-12 pt-12">Bride &amp; Groom</div>
                         <div className="columns-1 md:columns-2">
                             <div className=''>
                                 <Card 
