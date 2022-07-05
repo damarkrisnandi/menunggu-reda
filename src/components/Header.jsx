@@ -30,15 +30,20 @@ class Header extends Component {
             <Fragment>
                 <div className='
                     flex flex-col justify-center items-center 
-                    h-screen bg-slate-800'>
+                    h-screen'>
                         <p className={`${animationConstant} z-30 mb-10 text-white ${this.state.loading1 ? "translate-y-16 opacity-0": "translate-y-0 opacity-100"}`}
                         >The Wedding of</p>
-                        <h1 className={`header-text text-6xl text-amber-500 z-30 mb-10 ${animationConstant} ${this.state.loading2 ? "translate-y-16 opacity-0": "translate-y-0 opacity-100"}`}>
-                            Damar &amp; Resita
+                        <h1 className={`header-text text-6xl text-amber-300 mb-10 ${animationConstant} ${this.state.loading2 ? "translate-y-16 opacity-0": "translate-y-0 opacity-100"} glow`}>
+                            Yuni &amp; Damar
                         </h1>
-                        <p className={`${animationConstant} z-30 text-white ${this.state.loading1 ? "-translate-y-16 opacity-0": "translate-y-0 opacity-100"}`}>
+                        <p className={`${animationConstant} z-30 text-white mb-10 ${this.state.loading1 ? "-translate-y-16 opacity-0": "translate-y-0 opacity-100"}`}>
                             11 September 2022 &amp; 25 September 2022
                         </p>
+                        <div className={`${animationConstant} z-30 text-white ${this.state.loading1 ? "-translate-y-16 opacity-0": "translate-y-0 opacity-100"}`}>
+                            <p className='text-center'>Kepada Yth.</p>
+                            <p className='text-center'>Bapak/Ibu/Saudara/i</p>
+                            <p className='text-center'>Di tempat</p>
+                        </div>
                 </div>
             </Fragment>
             
