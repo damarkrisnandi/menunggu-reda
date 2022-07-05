@@ -4,9 +4,13 @@ class Header extends Component {
     state = { 
         loading1: true,
         loading2: true,
-        loading3: true
+        loading3: true,
+        guest: ''
     }
     componentDidMount() {
+        this.setState({
+            guest: window.location.pathname.split('/')[1]
+        })
         // logic yang sangat mindblowing
         setTimeout(() => {
             this.setState({
@@ -24,7 +28,7 @@ class Header extends Component {
             })
         }, 3000)
     }
-    render() { 
+    render() {
         const animationConstant = `duration-700 relative transform transition-all ease-in-out`;
         return (
             <Fragment>
@@ -42,6 +46,7 @@ class Header extends Component {
                         <div className={`${animationConstant} z-30 text-white ${this.state.loading1 ? "-translate-y-16 opacity-0": "translate-y-0 opacity-100"}`}>
                             <p className='text-center'>Kepada Yth.</p>
                             <p className='text-center'>Bapak/Ibu/Saudara/i</p>
+                            <p className='text-center font-bold text-lg'>{ this.state.guest }</p>
                             <p className='text-center'>Di tempat</p>
                         </div>
                 </div>
