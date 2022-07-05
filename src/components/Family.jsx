@@ -15,6 +15,7 @@ class Family extends Component {
                                 desc1="Putri pertama dari"
                                 father="Hardono"
                                 mother="Sumarni"
+                                instaUrl="https://www.instagram.com/resita_sri_wahyuni/"
                                 />
                             </div>
                             <div>
@@ -23,6 +24,7 @@ class Family extends Component {
                                 desc1="Putra pertama dari"
                                 father="Ismangil"
                                 mother="Aladria Nurti Anggorowati"
+                                instaUrl="https://www.instagram.com/damarkrisnandi/"
                                 />
                             </div>
                         </div>

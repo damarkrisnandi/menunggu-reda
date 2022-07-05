@@ -1,6 +1,7 @@
 import { Fragment } from "react";
+import './instagram.css'
 
-const Card = ({nama, desc1, father, mother}) => {
+const Card = ({nama, desc1, father, mother, instaUrl}) => {
     return ( 
         <Fragment>
             <div className='
@@ -10,6 +11,10 @@ const Card = ({nama, desc1, father, mother}) => {
                 <div className="text-white text-sm text-center">{desc1}</div>
                 <div className="text-white font-semibold text-center">Bapak {father} &amp; Ibu {mother}</div>
                 
+                <div className="mb-5"></div>
+                <a href={instaUrl} target="_blank" rel="noopener noreferrer" >
+                    <button className="gg-instagram"></button>
+                </a>
             </div>
         </Fragment>
     );
