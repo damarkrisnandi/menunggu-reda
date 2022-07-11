@@ -5,11 +5,10 @@
     top: 50%;
     left: 50%;
     transform: translate3d(-50%, -50%, 0);
-    background-color: rgba(0, 0, 0, 0);
     width: 100%;
     max-width: 95vw;
     padding: 5px;
-    border: 2px solid #b78846;
+    border: 2px solid #bae6fd;
   }
   .box:before, .box:after {
     content: "•";
@@ -17,10 +16,10 @@
     width: 14px;
     height: 14px;
     font-size: 14px;
-    color: #b78846;
-    border: 2px solid #b78846;
+    color: #bae6fd;
+    border: 2px solid #bae6fd;
     line-height: 12px;
-    top: 21px;
+    top: 5px;
     text-align: center;
   }
   .box:before {
@@ -31,7 +30,7 @@
   }
   .box .box-inner {
     position: relative;
-    border: 2px solid #b78846;
+    border: 2px solid #bae6fd;
     padding: 40px;
   }
   .box .box-inner:before, .box .box-inner:after {
@@ -40,8 +39,8 @@
     width: 14px;
     height: 14px;
     font-size: 14px;
-    color: #b78846;
-    border: 2px solid #b78846;
+    color: #bae6fd;
+    border: 2px solid #bae6fd;
     line-height: 12px;
     bottom: -2px;
     text-align: center;

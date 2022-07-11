@@ -45,40 +45,36 @@ function CountDownItem(props) {
 
 
     const calendar_url = "https://calendar.google.com/event?action=TEMPLATE&tmeid=Mjlqb2lvMnFic3FhbzJ1ZW04dDU3ajJldWogZGFtYXJrcmlzbmFuZGkxMjAyQG0&tmsrc=damarkrisnandi1202%40gmail.com";
+
+    const { theme } = props;
     return (
         <Fragment>
             <div className='
                     flex flex-col justify-center items-center 
                     h-96'>
                         <div className="columns-4 mb-10">
-                            <div className="flex flex-col justify-start items-center border-amber-300 rounded-lg border p-2">
-                                <div className="text-amber-300 text-5xl">{time.days <= 9 ? '0' : '' }{time.days}</div>
-                                <p className="text-sm text-white">Days</p>
+                            <div className={`flex flex-col justify-start items-center ${ theme.borderStyle } p-2`}>
+                                <div className={`${ theme.headerColor } text-5xl`}>{time.days <= 9 ? '0' : '' }{time.days}</div>
+                                <p className={`text-sm ${ theme.textColor }`}>Days</p>
                             </div>
                             
-                            <div className="flex flex-col justify-start items-center border-amber-300 rounded-lg border p-2">
-                                <div className="text-amber-300 text-5xl">{time.hours <= 9 ? '0' : '' }{time.hours}</div>
-                                <p className="text-sm text-white">Hours</p>
+                            <div className={`flex flex-col justify-start items-center ${ theme.borderStyle } p-2`}>
+                                <div className={`${ theme.headerColor } text-5xl`}>{time.hours <= 9 ? '0' : '' }{time.hours}</div>
+                                <p className={`text-sm ${ theme.textColor }`}>Hours</p>
                             </div>
 
-                            <div className="flex flex-col justify-start items-center border-amber-300 rounded-lg border p-2">
-                                <div className="text-amber-300 text-5xl">{time.minutes <= 9 ? '0' : '' }{time.minutes}</div>
-                                <p className="text-sm text-white">Minutes</p>
+                            <div className={`flex flex-col justify-start items-center ${ theme.borderStyle } p-2`}>
+                                <div className={`${ theme.headerColor } text-5xl`}>{time.minutes <= 9 ? '0' : '' }{time.minutes}</div>
+                                <p className={`text-sm ${ theme.textColor }`}>Minutes</p>
                             </div>
 
-                            <div className="flex flex-col justify-start items-center border-amber-300 rounded-lg border p-2">
-                                <div className="text-amber-300 text-5xl">{time.seconds <= 9 ? '0' : '' }{time.seconds}</div>
-                                <p className="text-sm text-white">Seconds</p>
+                            <div className={`flex flex-col justify-start items-center ${ theme.borderStyle } p-2`}>
+                                <div className={`${ theme.headerColor } text-5xl`}>{time.seconds <= 9 ? '0' : '' }{time.seconds}</div>
+                                <p className={`text-sm ${ theme.textColor }`}>Seconds</p>
                             </div>
                         </div>
                         <a href={calendar_url} target="_blank" rel="noopener noreferrer">
-                            <button className="
-                                duration-600 relative transform transition-all ease-in-out 
-                                bg-transparent 
-                                hover:bg-amber-300 text-amber-300 font-semibold 
-                                hover:text-slate-800 py-2 px-4 border border-amber-300 
-                                hover:border-transparent rounded-lg"
-                            >
+                            <button className={ theme.buttonStyle } onClick={() => { }}>
                                 Tambah Pengingat
                             </button>
                         </a>
