@@ -42,8 +42,8 @@ class Header extends Component {
         const { theme } = this.props
         return (
             <Fragment>
-                <div className='h-screen'>
-                        <div className='box w-10/12 mx-auto'>
+                <div className='h-screen bg-all'>
+                        <div className={`box w-10/12 mx-auto ${theme.bgColor}`}>
                             <div className='box-inner flex flex-col justify-center items-center'>
                             <p className={`${animationConstant} z-30 mb-10 ${theme.textColor} ${theme.bgColor} ${this.state.loading1 ? "translate-y-16 opacity-0": "translate-y-0 opacity-100"}`}>
                                     The Wedding of
@@ -51,9 +51,9 @@ class Header extends Component {
                                 <h1 className={`${theme.headerStyle} text-4xl md:text-6xl mb-10 ${animationConstant} ${this.state.loading2 ? "translate-y-16 opacity-0": "translate-y-0 opacity-100"} glow`}>
                                     Yuni &amp; Damar
                                 </h1>
-                                <p className={`${animationConstant} z-30 text-center ${theme.textColor} mb-10 ${this.state.loading1 ? "-translate-y-16 opacity-0": "translate-y-0 opacity-100"}`}>
+                                {/* <p className={`${animationConstant} z-30 text-center ${theme.textColor} mb-10 ${this.state.loading1 ? "-translate-y-16 opacity-0": "translate-y-0 opacity-100"}`}>
                                     11 September 2022 &amp; 25 September 2022
-                                </p>
+                                </p> */}
                                 <div className={`${animationConstant} ${theme.textColor} z-30 ${this.state.loading1 ? "-translate-y-16 opacity-0": "translate-y-0 opacity-100"}`}>
                                     <p className='text-center text-xs'>Kepada Yth.</p>
                                     <p className='text-center text-xs'>Bapak/Ibu/Saudara/i</p>

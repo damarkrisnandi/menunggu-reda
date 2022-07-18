@@ -7,6 +7,11 @@
   font-family: 'Dancing Script', cursive;
 }
 
+.bg-all {
+  /* background-image: url('../public/gray-floral.png'); */
+  background-image: url('../public/wild-flowers.png');
+}
+
 .glow {
   text-shadow:
       0 0 7px #fff,
@@ -45,4 +50,33 @@
 
 .bg-blue-4 {
   background: #71C9CE;
+}
+
+.mapouter{position:relative;text-align:right;height:500px;width:600px;}
+.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;padding-top:56.25%;}
+
+.map-responsive{
+
+  overflow:hidden;
+
+  padding-bottom:56.25%;
+
+  position:relative;
+
+  height:0;
+
+}
+
+.map-responsive iframe{
+
+  left:0;
+
+  top:0;
+
+  height:100%;
+
+  width:100%;
+
+  position:absolute;
+
 }
