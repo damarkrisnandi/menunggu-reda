@@ -17,6 +17,7 @@ class Family extends Component {
                             <div className=''>
                                 <Card 
                                 theme={ theme }
+                                img="/Bride.png"
                                 nama="Resita Sri Wahyuni"
                                 desc1="Putri pertama dari"
                                 father="Hardono"
@@ -27,6 +28,7 @@ class Family extends Component {
                             <div>
                                 <Card 
                                 theme={ theme }
+                                img="/Groom.png"
                                 nama="Damar Krisnandi Ramdan"
                                 desc1="Putra pertama dari"
                                 father="Ismangil"
