@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/menunggu-reda/static/css/main.c8c6abc1.css",
-    "main.js": "/menunggu-reda/static/js/main.1917ca76.js",
-    "static/js/787.31c9ee26.chunk.js": "/menunggu-reda/static/js/787.31c9ee26.chunk.js",
-    "static/media/wild-flowers.png": "/menunggu-reda/static/media/wild-flowers.bdc3b385c3435541a855.png",
-    "index.html": "/menunggu-reda/index.html",
-    "main.c8c6abc1.css.map": "/menunggu-reda/static/css/main.c8c6abc1.css.map",
-    "main.1917ca76.js.map": "/menunggu-reda/static/js/main.1917ca76.js.map",
-    "787.31c9ee26.chunk.js.map": "/menunggu-reda/static/js/787.31c9ee26.chunk.js.map"
+    "main.css": "/static/css/main.1a558ca8.css",
+    "main.js": "/static/js/main.1146987d.js",
+    "static/js/787.31c9ee26.chunk.js": "/static/js/787.31c9ee26.chunk.js",
+    "static/media/wild-flowers.png": "/static/media/wild-flowers.bdc3b385c3435541a855.png",
+    "index.html": "/index.html",
+    "main.1a558ca8.css.map": "/static/css/main.1a558ca8.css.map",
+    "main.1146987d.js.map": "/static/js/main.1146987d.js.map",
+    "787.31c9ee26.chunk.js.map": "/static/js/787.31c9ee26.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c8c6abc1.css",
-    "static/js/main.1917ca76.js"
+    "static/css/main.1a558ca8.css",
+    "static/js/main.1146987d.js"
   ]
 }
