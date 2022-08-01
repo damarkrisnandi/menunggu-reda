@@ -26,7 +26,6 @@ class Timeline extends Component {
     }
 
     onChange = (event) => {
-        console.log(event);
         this.setState({
             title: this.state.items[event].title
         })
@@ -48,7 +47,6 @@ class Timeline extends Component {
                     showThumbs={false} onChange={this.onChange}>
                         {
                             this.state.items.map(data => {
-                                console.log(data);
                                 return (
                                     <div key={data.img}>
                                         <img src={ data.img } alt={ data.title } srcset="" />
