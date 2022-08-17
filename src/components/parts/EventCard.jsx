@@ -9,7 +9,8 @@ const EventCard = ({theme, event, date, time, place1, place2, gmapsEmbedUrl}) =>
         <Fragment>
             <div className='
                 flex flex-col justify-center items-center 
-                h-auto'>
+                h-auto p-5'>
+                <img src='/rings.png' alt="damar and yuni" className="w-8 h-8 m-3" />
                 <div className="h-44">
                     <p className={`text-2xl md:text-3xl ${ theme.headerStyle } text-center mb-2`}>{event}</p>
                     <p className={`${ theme.textColor } text-center font-semibold text-md md:text-lg`}>{date}</p>
