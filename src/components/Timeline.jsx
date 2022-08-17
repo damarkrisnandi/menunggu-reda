@@ -13,13 +13,13 @@ class Timeline extends Component {
     componentDidMount() {
         this.setState({
             items: [
-                {img: '/timeline/1.png', title: 'Pertemuan', desc: 'Jogja, 2014 --- Kami sebenarnya kakak adek ketemu gede. kakak adek tingkat maksudnya'},
-                {img: '/timeline/2.png', title: 'PDKT', desc: 'Kos masing-masing, 2020 --- Di saat dunia terserang virus Corona, kami terkena virus cinta'},
-                {img: '/timeline/3.png', title: 'Jadian', desc: 'Kos masing-masing, 2020 --- Di saat orang-orang putus karena LDR, kami jadian karena LDR'},
-                {img: '/timeline/4.png', title: 'Debut', desc: 'Purwokerto, Maret 2021 --- Setelah lama online, kami akhirnya offline'},
-                {img: '/timeline/5.png', title: 'Debut(2)', desc: 'Buton Utara, Oktober 2021 --- Damar grogi ketemu calon mertua'},
-                {img: '/timeline/6.jpg', title: 'Lamaran', desc: 'Konawe Selatan, Februari 2022 --- Perjalanan dari barat mencari janji suci'},
-                {img: '/timeline/7.png', title: 'Hari H', desc: 'Hari H --- Kami tunggu yaa'},
+                {id: 1, img: '/timeline/1.png', title: 'Pertemuan', desc: 'Jogja, 2014 --- Kami sebenarnya kakak adek ketemu gede. kakak adek tingkat maksudnya'},
+                {id: 2, img: '/timeline/2.png', title: 'PDKT', desc: 'Kos masing-masing, 2020 --- Di saat dunia terserang virus Corona, kami terkena virus cinta'},
+                {id: 3, img: '/timeline/3.png', title: 'Jadian', desc: 'Kos masing-masing, 2020 --- Di saat orang-orang putus karena LDR, kami jadian karena LDR'},
+                {id: 4, img: '/timeline/4.png', title: 'Debut', desc: 'Purwokerto, Maret 2021 --- Setelah lama online, kami akhirnya offline'},
+                {id: 5, img: '/timeline/5.png', title: 'Debut(2)', desc: 'Buton Utara, Oktober 2021 --- Damar grogi ketemu calon mertua'},
+                {id: 6, img: '/timeline/6.jpg', title: 'Lamaran', desc: 'Konawe Selatan, Februari 2022 --- Perjalanan dari barat mencari janji suci'},
+                {id: 7, img: '/timeline/7.png', title: 'Hari H', desc: 'Hari H --- Kami tunggu yaa'},
             ],
             title: 'Pertemuan'
         })
@@ -42,13 +42,13 @@ class Timeline extends Component {
 
                     <div className="flex flex-col justify-start items-center h-52">
                     <h1 className={`${theme.headerStyle} text-2xl mb-2`}>{ this.state.title }</h1>
-                    <Carousel dynamicHeight={true} autoPlay={true} interval={4000} infiniteLoop={true}
+                    <Carousel dynamicHeight={true} autoPlay={true} interval={4000}
                     width={window.screen.width >= 1000 ? 350 : window.screen.width * 14 / 15} 
                     showThumbs={false} onChange={this.onChange}>
                         {
                             this.state.items.map(data => {
                                 return (
-                                    <div key={data.img}>
+                                    <div key={data.id}>
                                         <img src={ data.img } alt={ data.title } srcset="" />
                                         
                                         <p className="legend">{ data.desc }</p>
