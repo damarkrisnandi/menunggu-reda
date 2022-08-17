@@ -11,7 +11,7 @@ class Countdown extends Component {
         const { dateFormat, timeFormat } = utils.events.filter(({hidden}) => !hidden)[0];
         return (
             <Fragment>
-                <div className="w-9/12 container mx-auto h-screen">
+                <div className="w-9/12 container mx-auto h-auto mt-10">
                     <div className={`text-center ${ theme.headerStyle } text-5xl pb-12 pt-12`}>Counting Days</div>
                     <CountDownItem 
                         theme={ theme }

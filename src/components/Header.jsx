@@ -48,8 +48,10 @@ class Header extends Component {
                             <p className={`${animationConstant} z-30 mb-10 ${theme.textColor} ${theme.bgColor} ${this.state.loading1 ? "translate-y-16 opacity-0": "translate-y-0 opacity-100"}`}>
                                     The Wedding of
                                 </p>
-                                <h1 className={`${theme.headerStyle} text-4xl md:text-6xl mb-10 ${animationConstant} ${this.state.loading2 ? "translate-y-16 opacity-0": "translate-y-0 opacity-100"} glow`}>
-                                    Yuni &amp; Damar
+                                <h1 className={`flex justify-center items-center ${theme.headerStyle} text-4xl md:text-6xl mb-10 ${animationConstant} ${this.state.loading2 ? "translate-y-16 opacity-0": "translate-y-0 opacity-100"} glow`}>
+                                    Yuni
+                                    <img src='/rings.png' alt="damar and yuni" className="w-10 h-10 m-5"/>
+                                    Damar
                                 </h1>
                                 {/* <p className={`${animationConstant} z-30 text-center ${theme.textColor} mb-10 ${this.state.loading1 ? "-translate-y-16 opacity-0": "translate-y-0 opacity-100"}`}>
                                     11 September 2022 &amp; 25 September 2022

@@ -12,7 +12,11 @@ class Family extends Component {
             <Fragment>
                 <div>
                     <div className="w-9/12 container mx-auto h-screen">
-                    <div className={`text-center ${theme.headerStyle} text-5xl pb-12 pt-12`}>Bride &amp; Groom</div>
+                    <div className={`flex justify-center items-center text-center ${theme.headerStyle} text-5xl pb-12 pt-12`}>
+                        Bride 
+                        <img src='/rings.png' alt="damar and yuni" className="w-10 h-10 m-5" />
+                        Groom
+                    </div>
                         <div className="columns-1 md:columns-2">
                             <div className=''>
                                 <Card 

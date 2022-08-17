@@ -9,7 +9,7 @@ import Countdown from './components/Countdown';
 import Timeline from './components/Timeline';
 import Footer from './components/Footer';
 import Theme from './utils/theme';
-import GmapsLink from './components/GmapsLink';
+// import GmapsLink from './components/GmapsLink';
 
 function show(component, id) {
   if (!utils.hidden.includes(id)) {
@@ -30,7 +30,7 @@ function App() {
       { show(<Date theme={theme}/>, 'date') }
       { show(<Countdown theme={theme}/>, 'countdown') }
       { show(<Timeline theme={theme}/>, 'timeline') }
-      { show(<GmapsLink theme={theme}/>, 'gmaps') }
+      {/* { show(<GmapsLink theme={theme}/>, 'gmaps') } */}
       <Footer theme={theme}/>
       
     </div>
