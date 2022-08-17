@@ -1,15 +1,16 @@
 import { Fragment } from "react";
-import MapEmbed from "./MapEmbed";
-import utils from '../../utils/utils.json';
+// import MapEmbed from "./MapEmbed";
+// import utils from '../../utils/utils.json';
 
 const EventCard = ({theme, event, date, time, place1, place2, gmapsEmbedUrl}) => {
-    const dataLength = utils.events.filter(({hidden}) => !hidden).length;
+    // const dataLength = utils.events.filter(({hidden}) => !hidden).length;
 
     return (
         <Fragment>
             <div className='
                 flex flex-col justify-center items-center 
-                h-auto'>
+                h-auto p-5'>
+                <img src='/rings.png' alt="damar and yuni" className="w-8 h-8 m-3" />
                 <div className="h-44">
                     <p className={`text-2xl md:text-3xl ${ theme.headerStyle } text-center mb-2`}>{event}</p>
                     <p className={`${ theme.textColor } text-center font-semibold text-md md:text-lg`}>{date}</p>
@@ -17,10 +18,10 @@ const EventCard = ({theme, event, date, time, place1, place2, gmapsEmbedUrl}) =>
                     <p className={`${ theme.textColor } text-sm text-center`}>{place1}</p>
                     <p className={`${ theme.textColor } text-sm text-center`}>{place2}</p>
                 </div>
-                <MapEmbed 
+                {/* <MapEmbed 
                     width={window.screen.width >= 1000 ? window.screen.width * 10 / (12 * (dataLength === 2 ? 2 : 1.5)) : window.screen.width * 14 / (15 * 1.1)} 
                     height={window.screen.height / 2.5}
-                    src={gmapsEmbedUrl} />  
+                    src={gmapsEmbedUrl} />   */}
             </div>
         </Fragment>
     );
