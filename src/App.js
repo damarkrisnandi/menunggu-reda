@@ -28,9 +28,9 @@ function App() {
       <Header theme={theme} />
       { show(<Family theme={theme} />, 'family') }
       { show(<Date theme={theme}/>, 'date') }
+      { show(<GmapsLink theme={theme}/>, 'gmaps') }
       { show(<Countdown theme={theme}/>, 'countdown') }
       { show(<Timeline theme={theme}/>, 'timeline') }
-      { show(<GmapsLink theme={theme}/>, 'gmaps') }
       <Footer theme={theme}/>
       
     </div>

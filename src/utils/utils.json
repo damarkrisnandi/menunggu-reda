@@ -2,9 +2,9 @@
     "events": [
         {
             "id": 1,
-            "event": "Akad Nikah & Resepsi",
+            "event": "Akad Nikah",
             "dateMain": "Minggu, 11 September 2022",
-            "time": "09.00 - Selesai", 
+            "time": "09.00", 
             "place1": "Kediaman Mempelai Wanita",
             "place2": "Desa Gunungsari, Kec. Bonegunu, Kab. Buton Utara, Sulawesi Tenggara",
             "dateFormat": "11-09-2022",
@@ -14,7 +14,19 @@
         },
         {
             "id": 2,
-            "event": "Syukuran",
+            "event": "Resepsi",
+            "dateMain": "Minggu, 11 September 2022",
+            "time": "13.30 - Selesai", 
+            "place1": "Kediaman Mempelai Wanita",
+            "place2": "Desa Gunungsari, Kec. Bonegunu, Kab. Buton Utara, Sulawesi Tenggara",
+            "dateFormat": "11-09-2022",
+            "timeFormat": "09:00",
+            "gmapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.0533339647945!2d122.97182741403047!3d-4.760733850623513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2da22d9a71b5f13d%3A0x2e1a735ffe01dce0!2sBengkel%20las%20komang%20w!5e0!3m2!1sid!2sid!4v1658111363851!5m2!1sid!2sid",
+            "hidden": false
+        },
+        {
+            "id": 3,
+            "event": "Resepsi",
             "dateMain": "Minggu, 25 September 2022",
             "time": "10.00 - Selesai", 
             "place1": "Kediaman Mempelai Pria",
@@ -22,7 +34,7 @@
             "dateFormat": "25-09-2022",
             "timeFormat": "10:00",
             "gmapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.2315986931394!2d109.26321591405707!3d-7.439607275364743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e655dc8fcd927af%3A0xa338d2c5b0c24953!2sKost%20Putri%20%22Rumah%20Kelapa%20Gading%22!5e0!3m2!1sid!2sid!4v1658109833018!5m2!1sid!2sid",
-            "hidden": false
+            "hidden": true
         }
     ],
 

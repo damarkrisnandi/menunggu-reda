@@ -12,7 +12,7 @@ class WedDate extends Component {
         const dataLength = utils.events.filter(({hidden}) => !hidden).length;
         return (
             <Fragment>
-                <div className="w-11/12 container mx-auto mt-10">
+                <div className="w-11/12 md:w-9/12 container mx-auto mt-10 h-screen">
                     <div className={`text-center ${theme.headerStyle} text-5xl pb-12 pt-12`}>Events</div>
                     <div className={`columns-1 md:columns-${dataLength}`}>
                         {utils.events.filter(({hidden}) => !hidden).map( data => (

@@ -42,7 +42,7 @@ class Timeline extends Component {
 
                     <div className="flex flex-col justify-start items-center h-52">
                     <h1 className={`${theme.headerStyle} text-2xl mb-2`}>{ this.state.title }</h1>
-                    <Carousel dynamicHeight={true} 
+                    <Carousel dynamicHeight={true} autoPlay={true} interval={4000} infiniteLoop={true}
                     width={window.screen.width >= 1000 ? 350 : window.screen.width * 14 / 15} 
                     showThumbs={false} onChange={this.onChange}>
                         {

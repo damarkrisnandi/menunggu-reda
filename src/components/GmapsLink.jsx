@@ -10,6 +10,7 @@ class GmapsLink extends Component {
 
     render() { 
         const { theme } = this.props;
+        const { gmapsEmbedUrl } = utils.events.filter(({hidden}) => !hidden)[1]
         return (
             <Fragment>
                 <div className="container w-10/12 mx-auto">
@@ -18,13 +19,10 @@ class GmapsLink extends Component {
                     </div>
                 
                     <div className="flex flex-col justify-start items-center">
-                        {utils.events.filter(({hidden}) => !hidden).map(data => (
-                            <MapEmbed 
-                            key={data.id}
-                            width={window.screen.width >= 1000 ? window.screen.width * 10 / 12 : window.screen.width * 14 / 15} 
+                        <MapEmbed 
+                            width={window.screen.width >= 1000 ? window.screen.width * 9 / 12 : window.screen.width * 14 / 15} 
                             height={window.screen.height / 2}
-                            src={data.gmapsEmbedUrl} />    
-                        ))}
+                            src={gmapsEmbedUrl} />
                     </div>
                 </div>
             </Fragment>
