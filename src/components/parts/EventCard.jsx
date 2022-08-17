@@ -1,9 +1,9 @@
 import { Fragment } from "react";
-import MapEmbed from "./MapEmbed";
-import utils from '../../utils/utils.json';
+// import MapEmbed from "./MapEmbed";
+// import utils from '../../utils/utils.json';
 
 const EventCard = ({theme, event, date, time, place1, place2, gmapsEmbedUrl}) => {
-    const dataLength = utils.events.filter(({hidden}) => !hidden).length;
+    // const dataLength = utils.events.filter(({hidden}) => !hidden).length;
 
     return (
         <Fragment>
@@ -17,10 +17,10 @@ const EventCard = ({theme, event, date, time, place1, place2, gmapsEmbedUrl}) =>
                     <p className={`${ theme.textColor } text-sm text-center`}>{place1}</p>
                     <p className={`${ theme.textColor } text-sm text-center`}>{place2}</p>
                 </div>
-                <MapEmbed 
+                {/* <MapEmbed 
                     width={window.screen.width >= 1000 ? window.screen.width * 10 / (12 * (dataLength === 2 ? 2 : 1.5)) : window.screen.width * 14 / (15 * 1.1)} 
                     height={window.screen.height / 2.5}
-                    src={gmapsEmbedUrl} />  
+                    src={gmapsEmbedUrl} />   */}
             </div>
         </Fragment>
     );
