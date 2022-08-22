@@ -5,8 +5,8 @@ const Card = ({nama, desc1, father, mother, instaUrl, theme, img}) => {
     return ( 
         <Fragment>
             <div className={`
-                    flex flex-col justify-center items-center p-5 rounded-lg ${theme.bgColor} `}>
-                <img src={img} alt={nama} className="w-28 h-28 p-1 rounded-full border-white border-2 mb-5" />
+                    flex flex-col justify-center items-center p-2 rounded-lg ${theme.bgColor} mb-2`}>
+                <img src={img} alt={nama} className="w-72 h-72 p-1 rounded-full mb-3" />
                 <div className={`${theme.headerStyle} text-2xl text-center`}>{nama || 'Default Nama'}</div>
                 <div className="text-white text-sm text-center">{desc1}</div>
                 <div className="text-white font-semibold text-center">Bapak {father} &amp; Ibu {mother}</div>

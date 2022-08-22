@@ -12,6 +12,30 @@
   background-image: url('../public/wild-flowers.png');
 }
 
+.bg-header {
+  background-image: 
+  url('../public/top-left.png'),
+  url('../public/right-bottom.png'),
+  url('../public/right-top.png'),
+  url('../public/left-bottom.png');
+
+  background-attachment: fixed;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-size: 75px 75px, 75px 75px, 75px 75px, 75px 75px;
+  background-position: left top, right bottom, right top, left bottom;
+}
+
+.bg-body {
+  background-image: url('../public/flower-corner.png'), url('../public/flower-corner-top.png'), url('../public/1.png') ;
+  background-attachment: fixed;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 250px 250px, 250px 250px, auto;
+  background-position: bottom left, right top, center;
+}
+
+.bg-lokasi {
+}
+
 .glow {
   text-shadow:
       0 0 7px #fff,
@@ -79,4 +103,9 @@
 
   position:absolute;
 
+}
+
+.shadow-countdown {
+  padding: 10px;
+  box-shadow: 10px 10px 6px #888888;
 }
