@@ -11,15 +11,16 @@ class Countdown extends Component {
         const { dateFormat, timeFormat } = utils.events.filter(({hidden}) => !hidden)[0];
         return (
             <Fragment>
-                <div className="w-9/12 container mx-auto h-auto mt-10">
-                    <div className={`text-center ${ theme.headerStyle } text-5xl pb-12 pt-12`}>Counting Days</div>
+                <div className="bg-body">
+                <div className="w-11/12 md:w-9/12 container mx-auto h-auto mt-6">
+                    <div className={`text-center ${ theme.headerStyle2 } text-5xl pb-12 pt-12`}>Counting Days</div>
                     <CountDownItem 
                         theme={ theme }
                         date={ dateFormat }
                         time={ timeFormat }
                     />
                 </div>
-                
+                </div>
             </Fragment>
         );
     }
