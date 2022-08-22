@@ -42,10 +42,13 @@ class Header extends Component {
         const { theme } = this.props
         return (
             <Fragment>
-                <div className='h-screen bg-all'>
+                <div className='h-screen bg-body'>
                         <div className={`box w-10/12 mx-auto ${theme.bgColor}`}>
-                            <div className='box-inner flex flex-col justify-center items-center'>
-                            <p className={`${animationConstant} z-30 mb-10 ${theme.textColor} ${theme.bgColor} ${this.state.loading1 ? "translate-y-16 opacity-0": "translate-y-0 opacity-100"}`}>
+                            <div className='box-inner flex flex-col justify-center items-center bg-header'>
+                            <p className={`${animationConstant} z-30 mb-10 ${theme.textColor} ${theme.bgColor} ${this.state.loading1 ? "translate-y-16 opacity-0": "translate-y-0 opacity-100 "} header-text text-3xl`}>
+                                    You are Invited
+                                </p>
+                                <p className={`${animationConstant} z-30 mb-0 ${theme.textColor} ${theme.bgColor} ${this.state.loading1 ? "translate-y-16 opacity-0": "translate-y-0 opacity-100"} text-xs`}>
                                     The Wedding of
                                 </p>
                                 <h1 className={`flex justify-center items-center ${theme.headerStyle} text-4xl md:text-6xl mb-10 ${animationConstant} ${this.state.loading2 ? "translate-y-16 opacity-0": "translate-y-0 opacity-100"} glow`}>
@@ -58,9 +61,9 @@ class Header extends Component {
                                 </p> */}
                                 <div className={`${animationConstant} ${theme.textColor} z-30 ${this.state.loading1 ? "-translate-y-16 opacity-0": "translate-y-0 opacity-100"}`}>
                                     <p className='text-center text-xs'>Kepada Yth.</p>
-                                    <p className='text-center text-xs'>Bapak/Ibu/Saudara/i</p>
-                                    <p className='text-center font-semibold text-lg'>{ this.state.guest }</p>
-                                    <p className='text-center text-xs'>Di tempat</p>
+                                    <p className='text-center text-md'>Bapak/Ibu/Saudara/i</p>
+                                    <p className='text-center font-semibold text-md'>{ this.state.guest }</p>
+                                    {/* <p className='text-center text-md'>Di tempat</p> */}
                                 </div>
                             </div>
                         </div>

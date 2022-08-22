@@ -13,17 +13,19 @@ class GmapsLink extends Component {
         const { gmapsEmbedUrl } = utils.events.filter(({hidden}) => !hidden)[1]
         return (
             <Fragment>
-                <div className="container w-10/12 mx-auto">
+                <div className=''>
+                <div className="container w-10/12 mx-auto ">
                     <div className={`text-center ${ theme.headerStyle } text-5xl pb-12 pt-12`}>
                         Lokasi Acara
                     </div>
                 
-                    <div className="flex flex-col justify-start items-center">
+                    <div className="flex flex-col justify-start items-center rounded-xl">
                         <MapEmbed 
                             width={window.screen.width >= 1000 ? window.screen.width * 9 / 12 : window.screen.width * 14 / 15} 
                             height={window.screen.height / 2}
                             src={gmapsEmbedUrl} />
                     </div>
+                </div>
                 </div>
             </Fragment>
         );

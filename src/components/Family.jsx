@@ -10,8 +10,8 @@ class Family extends Component {
         const { theme } = this.props; 
         return (
             <Fragment>
-                <div>
-                    <div className="w-9/12 container mx-auto h-screen">
+                <div className='p-12'>
+                    <div className="md:w-11/12 container mx-auto">
                     <div className={`flex justify-center items-center text-center ${theme.headerStyle} text-5xl pb-12 pt-12`}>
                         Bride 
                         <img src='/rings.png' alt="damar and yuni" className="w-10 h-10 m-5" />
@@ -21,7 +21,7 @@ class Family extends Component {
                             <div className=''>
                                 <Card 
                                 theme={ theme }
-                                img="/Bride.png"
+                                img="/4.png"
                                 nama="Resita Sri Wahyuni"
                                 desc1="Putri pertama dari"
                                 father="Hardono"
@@ -32,7 +32,7 @@ class Family extends Component {
                             <div>
                                 <Card 
                                 theme={ theme }
-                                img="/Groom.png"
+                                img="/5.png"
                                 nama="Damar Krisnandi Ramdan"
                                 desc1="Putra pertama dari"
                                 father="Ismangil"

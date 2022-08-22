@@ -6,28 +6,34 @@ class Timeline extends Component {
         super(props);
         this.state = { 
             items: [],
-            title: ''
+            title: '',
+            desc: '',
+            time: ''
         }
     }
      
     componentDidMount() {
         this.setState({
             items: [
-                {id: 1, img: '/timeline/1.png', title: 'Pertemuan', desc: 'Jogja, 2014 --- Kami sebenarnya kakak adek ketemu gede. kakak adek tingkat maksudnya'},
-                {id: 2, img: '/timeline/2.png', title: 'PDKT', desc: 'Kos masing-masing, 2020 --- Di saat dunia terserang virus Corona, kami terkena virus cinta'},
-                {id: 3, img: '/timeline/3.png', title: 'Jadian', desc: 'Kos masing-masing, 2020 --- Di saat orang-orang putus karena LDR, kami jadian karena LDR'},
-                {id: 4, img: '/timeline/4.png', title: 'Debut', desc: 'Purwokerto, Maret 2021 --- Setelah lama online, kami akhirnya offline'},
-                {id: 5, img: '/timeline/5.png', title: 'Debut(2)', desc: 'Buton Utara, Oktober 2021 --- Damar grogi ketemu calon mertua'},
-                {id: 6, img: '/timeline/6.jpg', title: 'Lamaran', desc: 'Konawe Selatan, Februari 2022 --- Perjalanan dari barat mencari janji suci'},
-                {id: 7, img: '/timeline/7.png', title: 'Hari H', desc: 'Hari H --- Kami tunggu yaa'},
+                {img: '/timeline/1.png', title: 'Pertemuan', time: 'Jogja, 2014', desc: 'Kami sebenarnya kakak adek ketemu gede. kakak adek tingkat maksudnya'},
+                {img: '/timeline/2.png', title: 'PDKT', time: 'Kos masing-masing, 2020', desc: 'Di saat dunia terserang virus Corona, kami terkena virus cinta'},
+                {img: '/timeline/3.png', title: 'Jadian', time: 'Kos masing-masing, 2020', desc: 'Di saat orang-orang putus karena LDR, kami jadian karena LDR'},
+                {img: '/timeline/4.png', title: 'Debut', time: 'Purwokerto, Maret 2021', desc: 'Setelah lama online, kami akhirnya offline'},
+                {img: '/timeline/5.png', title: 'Debut(2)', time: 'Buton Utara, Oktober 2021', desc: 'Damar grogi ketemu calon mertua'},
+                {img: '/timeline/6.jpg', title: 'Lamaran', time: 'Konawe Selatan, Februari 2022', desc: 'Perjalanan dari barat mencari janji suci'},
+                {img: '/timeline/7.png', title: 'Hari H', time: 'Hari H', desc: 'Kami tunggu yaa'},
             ],
-            title: 'Pertemuan'
+            title: 'Pertemuan',
+            desc: 'Kami sebenarnya kakak adek ketemu gede. kakak adek tingkat maksudnya',
+            time: 'Jogja, 2014'
         })
     }
 
     onChange = (event) => {
         this.setState({
-            title: this.state.items[event].title
+            title: this.state.items[event].title,
+            desc: this.state.items[event].desc,
+            time: this.state.items[event].time
         })
     }
 
@@ -35,13 +41,15 @@ class Timeline extends Component {
         const { theme } = this.props;
         return (
             <Fragment>
-                <div className="w-9/12 container mx-auto h-screen">
+                <div className="w-9/12 container mx-auto min-h-screen">
                     <div className={`text-center ${ theme.headerStyle } text-5xl pb-12 pt-12`}>
                         Our Love Story
                     </div>
 
                     <div className="flex flex-col justify-start items-center h-52">
+                    
                     <h1 className={`${theme.headerStyle} text-2xl mb-2`}>{ this.state.title }</h1>
+                    <p className="text-white text-xs mb-3">{ this.state.time }</p>
                     <Carousel dynamicHeight={true} autoPlay={true} interval={4000}
                     width={window.screen.width >= 1000 ? 350 : window.screen.width * 14 / 15} 
                     showThumbs={false} onChange={this.onChange}>
@@ -51,12 +59,13 @@ class Timeline extends Component {
                                     <div key={data.id}>
                                         <img src={ data.img } alt={ data.title } srcset="" />
                                         
-                                        <p className="legend">{ data.desc }</p>
+                                        {/* <p className="legend">{ data.desc }</p> */}
                                     </div>
                                 )
                             }
                         )}
                     </Carousel>
+                    <p className="text-white text-xs mt-3">{ this.state.desc }</p>
                         
                     </div>
 
