@@ -31,6 +31,7 @@
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-size: 250px 250px, 250px 250px, auto;
   background-position: bottom left, right top, center;
+  -webkit-appearance: none;
 }
 
 .bg-lokasi {
