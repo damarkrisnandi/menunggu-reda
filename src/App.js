@@ -10,6 +10,7 @@ import Timeline from './components/Timeline';
 import Footer from './components/Footer';
 import Theme from './utils/theme';
 import GmapsLink from './components/GmapsLink';
+import Gift from './components/Gift';
 
 function show(component, id) {
   if (!utils.hidden.includes(id)) {
@@ -31,6 +32,7 @@ function App() {
       { show(<GmapsLink theme={theme}/>, 'gmaps') }
       { show(<Countdown theme={theme}/>, 'countdown') }
       { show(<Timeline theme={theme}/>, 'timeline') }
+      { show(<Gift theme={theme}/>, 'gift') }
       <Footer theme={theme}/>
       
     </div>
