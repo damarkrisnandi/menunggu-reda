@@ -41,12 +41,12 @@ class Timeline extends Component {
         const { theme } = this.props;
         return (
             <Fragment>
-                <div className="w-9/12 container mx-auto min-h-screen">
+                <div className="w-9/12 container mx-auto p-12">
                     <div className={`text-center ${ theme.headerStyle } text-5xl pb-12 pt-12`}>
                         Our Love Story
                     </div>
 
-                    <div className="flex flex-col justify-start items-center h-52">
+                    <div className="flex flex-col justify-start items-center">
                     
                     <h1 className={`${theme.headerStyle} text-2xl mb-2`}>{ this.state.title }</h1>
                     <p className="text-white text-xs mb-3">{ this.state.time }</p>
