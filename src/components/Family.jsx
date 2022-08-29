@@ -12,11 +12,11 @@ class Family extends Component {
             <Fragment>
                 <div className='p-12'>
                     <div className="md:w-11/12 container mx-auto">
-                    <div className={`flex justify-center items-center text-center ${theme.headerStyle} text-5xl pb-12 pt-12`}>
-                        Bride 
-                        <img src='/rings.png' alt="damar and yuni" className="w-10 h-10 m-5" />
-                        Groom
-                    </div>
+                        <div className={`flex justify-center items-center text-center ${theme.headerStyle} text-5xl pb-12 pt-12`}>
+                            Bride 
+                            <img src='/rings.png' alt="damar and yuni" className="w-10 h-10 m-5" />
+                            Groom
+                        </div>
                         <div className="columns-1 md:columns-2">
                             <div className=''>
                                 <Card 
@@ -41,6 +41,12 @@ class Family extends Component {
                                 />
                             </div>
                         </div>
+                        
+                    </div>
+                    <div className='md:w-3/5 mx-auto mt-20'>
+                        <p className='text-white text-center text-md'>
+                            Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan do'a restu kepada kami.
+                        </p>
                     </div>
                 </div>
             </Fragment>
