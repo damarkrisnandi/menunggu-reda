@@ -14,7 +14,7 @@ const Song = (props) => {
       });
     
     const [isPlay, setPlay] = useState(false);
-    const [sound, setSound] = useState(howl);
+    const sound = useState(howl)[0];
     const [isOpen, setOpen] = useState(false)
     
     
@@ -34,25 +34,26 @@ const Song = (props) => {
     //     setPlay(true);
     //     sound.play()
     // })
+    const theme = props.theme;
     return ( 
         <Fragment>
             
             <div className="fixed bottom-1 left-1 z-50">
-                <button className="text-green-500 font-light" onClick={() => {setPlay(!isPlay)}}>
+                <button className="text-white font-light" onClick={() => {setPlay(!isPlay)}}>
                     <ButtonPlay isPlay={isPlay} />
                 </button>
             </div> 
-            {!isOpen && (<div className="fixed top-0 left-0 right-0 bottom-0 w-full h-screen z-50 overflow-hidden bg-gray-700 opacity-75 flex flex-col items-center justify-end pb-10">
-            <ButtonMain onClick={() => {setOpen(true); setPlay(true)}}/>
+            {!isOpen && (<div className="fixed top-0 left-0 right-0 bottom-0 w-full h-screen z-50 overflow-hidden bg-gray-700 bg-opacity-95 flex flex-col items-center justify-center">
+            <ButtonMain onClick={() => {setOpen(true); setPlay(true)}} theme={theme}/>
             </div>)}
         </Fragment> 
     );
 }
 
-const ButtonMain = ({onClick}) => {
+const ButtonMain = ({onClick, theme}) => {
     return (
         <Fragment>
-            <div className="">
+            <div className={`${theme.headerStyle} text-xl`}>
                 <button className="px-4 py-5 bg-sky-500 text-white rounded-xl" onClick={onClick}>Buka Undangan</button>
             </div>
         </Fragment>

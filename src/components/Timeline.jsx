@@ -16,12 +16,12 @@ class Timeline extends Component {
         this.setState({
             items: [
                 {img: '/timeline/1.png', title: 'Pertemuan', time: 'Jogja, 2014', desc: 'Kami sebenarnya kakak adek ketemu gede. kakak adek tingkat maksudnya'},
-                {img: '/timeline/2.png', title: 'PDKT', time: 'Kos masing-masing, 2020', desc: 'Di saat dunia terserang virus Corona, kami terkena virus cinta'},
-                {img: '/timeline/3.png', title: 'Jadian', time: 'Kos masing-masing, 2020', desc: 'Di saat orang-orang putus karena LDR, kami jadian karena LDR'},
+                {img: '/timeline/2.png', title: 'PDKT', time: 'Kos masing-masing, 2020', desc: 'Kuliah lewat begitu saja, bibit-bibit cinta justru tumbuh di kala dunia digempur Corona.'},
+                {img: '/timeline/3.png', title: 'Jadian', time: 'Kos masing-masing, 2020', desc: 'Kami ucapkan terima kasih kepada discord sebagai mak comblang pasangan LDR satu ini.'},
                 {img: '/timeline/4.png', title: 'Debut', time: 'Purwokerto, Maret 2021', desc: 'Setelah lama online, kami akhirnya offline'},
-                {img: '/timeline/5.png', title: 'Debut(2)', time: 'Buton Utara, Oktober 2021', desc: 'Damar grogi ketemu calon mertua'},
+                {img: '/timeline/5.png', title: 'Debut(2)', time: 'Buton Utara, Oktober 2021', desc: 'Damar ketemu camer sekaligus fit and proper test (alhamdulillah lulus)'},
                 {img: '/timeline/6.jpg', title: 'Lamaran', time: 'Konawe Selatan, Februari 2022', desc: 'Perjalanan dari barat mencari janji suci'},
-                {img: '/timeline/7.png', title: 'Hari H', time: 'Hari H', desc: 'Kami tunggu yaa'},
+                {img: '/timeline/7.png', title: 'Hari H', time: 'Hari H', desc: 'Kami tunggu kehadirannya yaa'},
             ],
             title: 'Pertemuan',
             desc: 'Kami sebenarnya kakak adek ketemu gede. kakak adek tingkat maksudnya',
