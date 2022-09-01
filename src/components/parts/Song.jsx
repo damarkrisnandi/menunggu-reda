@@ -7,46 +7,56 @@ const Song = (props) => {
     const howl = new Howl({
         src: ['song.mp3'],
         loop: true,
+        volume: 0.1,
         onend: function() {
           console.log('Finished!');
         }
       });
     
     const [isPlay, setPlay] = useState(false);
-    const [sound, setSound] = useState(howl)
+    const [sound, setSound] = useState(howl);
+    const [isOpen, setOpen] = useState(false)
     
     
       
 
     useEffect(() => {
-        if (props.play) {
-            setPlay(true);
-            setSound({
-                src: ['song.mp3'],
-                loop: true,
-                volume: 0.03,
-                onend: function() {
-                console.log('Finished!');
-                }
-            })
-            
+        console.log(isPlay)
+        if (!isPlay) {
+            sound.pause()
+        } else {
+            sound.play();
         }
-    }, [props.play])
-    //   sound.play();
-
-    window.addEventListener('click', () => {
-        setPlay(true);
-        sound.play()
     })
+      
+
+    // window.addEventListener('click', () => {
+    //     setPlay(true);
+    //     sound.play()
+    // })
     return ( 
         <Fragment>
+            
             <div className="fixed bottom-1 left-1 z-50">
-                <button className="text-green-500 font-light" onClick={() => {console.log(isPlay); setPlay(!isPlay); isPlay ? sound.pause() : sound.play()}}>
+                <button className="text-green-500 font-light" onClick={() => {setPlay(!isPlay)}}>
                     <ButtonPlay isPlay={isPlay} />
                 </button>
-            </div>    
+            </div> 
+            {!isOpen && (<div className="fixed top-0 left-0 right-0 bottom-0 w-full h-screen z-50 overflow-hidden bg-gray-700 opacity-75 flex flex-col items-center justify-end pb-10">
+            <ButtonMain onClick={() => {setOpen(true); setPlay(true)}}/>
+            </div>)}
         </Fragment> 
     );
+}
+
+const ButtonMain = ({onClick}) => {
+    return (
+        <Fragment>
+            <div className="">
+                <button className="px-4 py-5 bg-sky-500 text-white rounded-xl" onClick={onClick}>Buka Undangan</button>
+            </div>
+        </Fragment>
+    )
 }
 
 const ButtonPlay = ({isPlay}) => {
