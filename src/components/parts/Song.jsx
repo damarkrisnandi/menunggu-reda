@@ -35,6 +35,7 @@ const Song = (props) => {
     //     sound.play()
     // })
     const theme = props.theme;
+    const animationConstant = `duration-700 transform transition-all ease-in-out`;
     return ( 
         <Fragment>
             
@@ -43,7 +44,7 @@ const Song = (props) => {
                     <ButtonPlay isPlay={isPlay} />
                 </button>
             </div> 
-            {!isOpen && (<div className="bg-header fixed top-0 left-0 right-0 bottom-0 w-full h-screen z-50 overflow-hidden bg-gray-700 bg-opacity-95 flex flex-col items-center justify-center">
+            {(<div className={`${animationConstant} bg-header fixed top-0 left-0 right-0 bottom-0 w-full h-screen ${isOpen ? "-translate-y-28 opacity-0": ""} z-50 overflow-hidden bg-gray-700 bg-opacity-95 flex flex-col items-center justify-center`}>
             <ButtonMain onClick={() => {setOpen(true); setPlay(true)}} theme={theme}/>
             </div>)}
         </Fragment> 
