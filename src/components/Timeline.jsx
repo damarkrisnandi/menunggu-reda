@@ -50,7 +50,7 @@ class Timeline extends Component {
                     
                     <h1 className={`${theme.headerStyle} text-2xl mb-2`}>{ this.state.title }</h1>
                     <p className="text-white text-xs mb-3">{ this.state.time }</p>
-                    <Carousel dynamicHeight={true} autoPlay={true} interval={4000} infiniteLoop={true}
+                    <Carousel dynamicHeight={true} autoPlay={true} interval={4000}
                     width={window.screen.width >= 1000 ? 350 : window.screen.width * 14 / 15} 
                     showThumbs={false} onChange={this.onChange}>
                         {
